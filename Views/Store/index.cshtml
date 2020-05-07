@@ -1,0 +1,36 @@
+﻿@model IEnumerable<PracticeApp.Models.Product>
+
+@{ 
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+    <div>
+        <h1>Happy Skincare Local Co.</h1>
+        <h3>Monday-Sunday 8am-6pm</h3>
+    </div>
+
+    <section>
+        <h2>Our Local Products</h2>
+        @foreach(var item in Model) {
+        <div>
+            <img src=item.Image alt=item.Name />
+            <h3>item.Name</h3>
+            <p>item.Description</p>
+            <p>item.Price</p>
+
+            @*<h3>@Html.DisplayFor(modelItem => item.Name)</h3>
+        <p>@Html.DisplayFor(modelItem => item.Price)</p>
+         <p>@Html.DisplayFor(modelItem => item.Description)</p>*@
+        </div>
+        }
+    </section>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="Controllers\HomeController.cs" />
+    <Content Include="Controllers\StoreController.cs" />
+    <Content Include="Models\Product.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\css\stylish-portfolio.css" />
+    <None Include="wwwroot\css\stylish-portfolio.min.css" />
+    <None Include="wwwroot\img\bg-callout.jpg" />
+    <None Include="wwwroot\img\bg-masthead.jpg" />
+    <None Include="wwwroot\img\portfolio-1.jpg" />
+    <None Include="wwwroot\img\portfolio-2.jpg" />
+    <None Include="wwwroot\img\portfolio-3.jpg" />
+    <None Include="wwwroot\img\portfolio-4.jpg" />
+    <None Include="wwwroot\js\stylish-portfolio.js" />
+    <None Include="wwwroot\js\stylish-portfolio.min.js" />
+    <None Include="wwwroot\scss\stylish-portfolio.scss" />
+    <None Include="wwwroot\scss\_bootstrap-overrides.scss" />
+    <None Include="wwwroot\scss\_callout.scss" />
+    <None Include="wwwroot\scss\_footer.scss" />
+    <None Include="wwwroot\scss\_global.scss" />
+    <None Include="wwwroot\scss\_masthead.scss" />
+    <None Include="wwwroot\scss\_mixins.scss" />
+    <None Include="wwwroot\scss\_portfolio.scss" />
+    <None Include="wwwroot\scss\_services.scss" />
+    <None Include="wwwroot\scss\_sidebar.scss" />
+    <None Include="wwwroot\scss\_variables.scss" />
+    <None Include="wwwroot\vendor\bootstrap\css\bootstrap-grid.css" />
+    <None Include="wwwroot\vendor\bootstrap\css\bootstrap-grid.css.map" />
+    <None Include="wwwroot\vendor\bootstrap\css\bootstrap-grid.min.css" />
+    <None Include="wwwroot\vendor\bootstrap\css\bootstrap-grid.min.css.map" />
+    <None Include="wwwroot\vendor\bootstrap\css\bootstrap-reboot.css" />
+    <None Include="wwwroot\vendor\bootstrap\css\bootstrap-reboot.css.map" />
+    <None Include="wwwroot\vendor\bootstrap\css\bootstrap-reboot.min.css" />
+    <None Include="wwwroot\vendor\bootstrap\css\bootstrap-reboot.min.css.map" />
+    <None Include="wwwroot\vendor\bootstrap\css\bootstrap.css" />
+    <None Include="wwwroot\vendor\bootstrap\css\bootstrap.css.map" />
+    <None Include="wwwroot\vendor\bootstrap\css\bootstrap.min.css" />
+    <None Include="wwwroot\vendor\bootstrap\css\bootstrap.min.css.map" />
+    <None Include="wwwroot\vendor\bootstrap\js\bootstrap.bundle.js" />
+    <None Include="wwwroot\vendor\bootstrap\js\bootstrap.bundle.js.map" />
+    <None Include="wwwroot\vendor\bootstrap\js\bootstrap.bundle.min.js" />
+    <None Include="wwwroot\vendor\bootstrap\js\bootstrap.bundle.min.js.map" />
+    <None Include="wwwroot\vendor\bootstrap\js\bootstrap.js" />
+    <None Include="wwwroot\vendor\bootstrap\js\bootstrap.js.map" />
+    <None Include="wwwroot\vendor\bootstrap\js\bootstrap.min.js" />
+    <None Include="wwwroot\vendor\bootstrap\js\bootstrap.min.js.map" />
+    <None Include="wwwroot\vendor\fontawesome-free\css\all.css" />
+    <None Include="wwwroot\vendor\fontawesome-free\css\all.min.css" />
+    <None Include="wwwroot\vendor\fontawesome-free\css\brands.css" />
+    <None Include="wwwroot\vendor\fontawesome-free\css\brands.min.css" />
+    <None Include="wwwroot\vendor\fontawesome-free\css\fontawesome.css" />
+    <None Include="wwwroot\vendor\fontawesome-free\css\fontawesome.min.css" />
+    <None Include="wwwroot\vendor\fontawesome-free\css\regular.css" />
+    <None Include="wwwroot\vendor\fontawesome-free\css\regular.min.css" />
+    <None Include="wwwroot\vendor\fontawesome-free\css\solid.css" />
+    <None Include="wwwroot\vendor\fontawesome-free\css\solid.min.css" />
+    <None Include="wwwroot\vendor\fontawesome-free\css\svg-with-js.css" />
+    <None Include="wwwroot\vendor\fontawesome-free\css\svg-with-js.min.css" />
+    <None Include="wwwroot\vendor\fontawesome-free\css\v4-shims.css" />
+    <None Include="wwwroot\vendor\fontawesome-free\css\v4-shims.min.css" />
+    <None Include="wwwroot\vendor\fontawesome-free\webfonts\fa-brands-400.eot" />
+    <None Include="wwwroot\vendor\fontawesome-free\webfonts\fa-brands-400.svg" />
+    <None Include="wwwroot\vendor\fontawesome-free\webfonts\fa-brands-400.ttf" />
+    <None Include="wwwroot\vendor\fontawesome-free\webfonts\fa-brands-400.woff" />
+    <None Include="wwwroot\vendor\fontawesome-free\webfonts\fa-brands-400.woff2" />
+    <None Include="wwwroot\vendor\fontawesome-free\webfonts\fa-regular-400.eot" />
+    <None Include="wwwroot\vendor\fontawesome-free\webfonts\fa-regular-400.svg" />
+    <None Include="wwwroot\vendor\fontawesome-free\webfonts\fa-regular-400.ttf" />
+    <None Include="wwwroot\vendor\fontawesome-free\webfonts\fa-regular-400.woff" />
+    <None Include="wwwroot\vendor\fontawesome-free\webfonts\fa-regular-400.woff2" />
+    <None Include="wwwroot\vendor\fontawesome-free\webfonts\fa-solid-900.eot" />
+    <None Include="wwwroot\vendor\fontawesome-free\webfonts\fa-solid-900.svg" />
+    <None Include="wwwroot\vendor\fontawesome-free\webfonts\fa-solid-900.ttf" />
+    <None Include="wwwroot\vendor\fontawesome-free\webfonts\fa-solid-900.woff" />
+    <None Include="wwwroot\vendor\fontawesome-free\webfonts\fa-solid-900.woff2" />
+    <None Include="wwwroot\vendor\jquery-easing\jquery.easing.compatibility.js" />
+    <None Include="wwwroot\vendor\jquery-easing\jquery.easing.js" />
+    <None Include="wwwroot\vendor\jquery-easing\jquery.easing.min.js" />
+    <None Include="wwwroot\vendor\jquery\jquery.js" />
+    <None Include="wwwroot\vendor\jquery\jquery.min.js" />
+    <None Include="wwwroot\vendor\jquery\jquery.min.map" />
+    <None Include="wwwroot\vendor\jquery\jquery.slim.js" />
+    <None Include="wwwroot\vendor\jquery\jquery.slim.min.js" />
+    <None Include="wwwroot\vendor\jquery\jquery.slim.min.map" />
+    <None Include="wwwroot\vendor\simple-line-icons\css\simple-line-icons.css" />
+    <None Include="wwwroot\vendor\simple-line-icons\fonts\Simple-Line-Icons.eot" />
+    <None Include="wwwroot\vendor\simple-line-icons\fonts\Simple-Line-Icons.svg" />
+    <None Include="wwwroot\vendor\simple-line-icons\fonts\Simple-Line-Icons.ttf" />
+    <None Include="wwwroot\vendor\simple-line-icons\fonts\Simple-Line-Icons.woff" />
+    <None Include="wwwroot\vendor\simple-line-icons\fonts\Simple-Line-Icons.woff2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.2" />
+  </ItemGroup>
+
+</Project>

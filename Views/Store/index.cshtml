@@ -14,22 +14,29 @@
 <body>
     <div>
         <h1>Happy Skincare Local Co.</h1>
-        <h3>Monday-Sunday 8am-6pm</h3>
+        <h4>Monday-Sunday 8am-6pm</h4>
     </div>
 
     <section>
-        <h2>Our Local Products</h2>
-        @foreach(var item in Model) {
-        <div>
-            <img src=item.Image alt=item.Name />
-            <h3>item.Name</h3>
-            <p>item.Description</p>
-            <p>item.Price</p>
-
-            @*<h3>@Html.DisplayFor(modelItem => item.Name)</h3>
-        <p>@Html.DisplayFor(modelItem => item.Price)</p>
-         <p>@Html.DisplayFor(modelItem => item.Description)</p>*@
-        </div>
+        <h5>Trending Products</h5>
+        @foreach (var item in Model)
+        {
+            <!-- Product Card -->
+            <div class="row">
+                <div class="col s12 m6">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src=@Html.DisplayFor(modelItem=> item.Image) alt=@Html.DisplayFor(modelItem=> item.Name)>
+                            <span class="card-title">@Html.DisplayFor(modelItem => item.Name)</span>
+                            <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+                        </div>
+                        <div class="card-content">
+                            <p>@Html.DisplayFor(modelItem => item.Description)</p>
+                            <p>@Html.DisplayFor(modelItem => item.Price)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         }
     </section>
 </body>

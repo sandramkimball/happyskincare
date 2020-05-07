@@ -44,3 +44,27 @@
     <a asp-action="Index">Back to List</a>
 </div>
 
+<script>
+    var data = {
+        name: 'Melon Eyeshadow',
+        price: '8.99',
+        description: 'The perfect shade of pinky orange to flatter every skin type.',
+        image: ''
+    }
+
+    fetch('/product/create/', {
+        method: 'POST',
+        body: JSON.stringify(data),
+        headers: {
+            Accept: 'application/json',
+            "Content-Type": 'application/json'
+        }
+    })
+        .then(function (res) {
+            return res.json();
+        })
+        .then(function (myJson) {
+            console.log(myJson);
+        });
+</script>
+

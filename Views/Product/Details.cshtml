@@ -46,3 +46,13 @@
         <button id="'ajaxTest">Ajax Get</button>
     </div>
 </div>
+
+<script>
+    fetch('/product/details/')
+        .then(function (res) {
+            return res.json();
+        })
+        .then(function (myJson) {
+            console.log(myJson);
+        });
+</script>

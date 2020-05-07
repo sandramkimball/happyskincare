@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using Newtonsoft.Json;
+﻿using Microsoft.AspNetCore.Mvc;
 using PracticeApp.Models;
+using System.Collections.Generic;
 
 namespace PracticeApp.Controllers
 {
@@ -13,7 +9,7 @@ namespace PracticeApp.Controllers
         public ActionResult Index()
         {
 
-            var dummydata = new List<Product>() 
+            var dummydata = new List<Product>()
             {
                 new Product {
                     Name = "Argan Oil",

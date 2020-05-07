@@ -25,7 +25,6 @@ namespace PracticeApp.Controllers
         public ActionResult Index()
         {
             //var repository = new ProductRepository();
-
             return View(_productRepository.GetProducts());
         }
 
@@ -55,12 +54,18 @@ namespace PracticeApp.Controllers
         {
             try
             {
-                // TODO: Add insert logic here
-
+                if (ModelState.IsValid)
+                {
+                    Console.Write("Input matches server validation.");
+                }
                 return View();
             }
             catch
             {
+                if(ModelState.IsValid is false)
+                {
+                    Console.Write("Error with validating input. Make sure everything is filled out properly.");
+                }
                 return View();
             }
         }

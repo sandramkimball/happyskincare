@@ -19,10 +19,11 @@
 <body>
     <!-- Dropdown Structure -->
     <ul id="dropdown1" class="dropdown-content">
-        <li><a href="#!">one</a></li>
-        <li><a href="#!">two</a></li>
+        <li><a href="#!">Home</a></li> @Html.ActionLink("Menus", "Menu", "Home", null, new { @class = "page-scroll" });
+        <li><a href="#!">Store</a></li>@Html.ActionLink("Menus", "Menu", "Store", null, new { @class = "page-scroll" });
         <li class="divider"></li>
         <li><a href="#!">three</a></li>
+
     </ul>
     <nav>
         <div class="nav-wrapper">
